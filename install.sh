@@ -18,7 +18,7 @@ sudo mv firefox-dev /opt
 
 echo "[Desktop Entry]
 Name = Mozilla Firefox Developer Edition
-GenericName = Firefox Developer Edition
+GenericName = Mozilla Firefox Developer Edition
 Exec = /opt/firefox-dev/firefox
 Terminal = false
 Icon = /opt/firefox-dev/browser/chrome/icons/default/default128.png
