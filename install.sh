@@ -1,4 +1,9 @@
-wget -O firefox-dev.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+FILE=firefox-dev.tar.bz2
+if [ -f "$FILE" ]; then
+    echo "$FILE exists."
+else
+    wget -O firefox-dev.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+fi
 
 tar -xjf firefox-dev.tar.bz2
 mv firefox firefox-dev
@@ -14,10 +19,11 @@ Type = Application
 Categories = Application; Network; Web-Development;
 Comment = Web Browser for Developers" > firefox-dev-desktop
 
-cp firefox-dev-desktop /Desktop
-mv /Desktop/firefox-dev-desktop /Desktop/firefox-dev.desktop
+sudo cp firefox-dev-desktop $HOME/Desktop
+sudo mv $HOME/Desktop/firefox-dev-desktop $HOME/Desktop/firefox-dev.desktop
 
-mv firefox-dev-desktop .local/share/applications
-mv .local/share/applications/firefox-dev-desktop .local/share/applications/firefox-dev.desktop
+
+sudo mv firefox-dev-desktop $HOME/.local/share/applications
+sudo mv $HOME/.local/share/applications/firefox-dev-desktop $HOME/.local/share/applications/firefox-dev.desktop
 
 echo "Now you can access Firefox Developer Edition from your Start Menu or Desktop."
