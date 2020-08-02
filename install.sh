@@ -1,8 +1,15 @@
+sudo echo "Installation starts..."
 FILE=firefox-dev.tar.bz2
+FOLDER=firefox-dev
+
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
 else
     wget -O firefox-dev.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+fi
+
+if [ -f "$FOLDER" ]; then
+    rm "$FOLDER"
 fi
 
 tar -xjf firefox-dev.tar.bz2
@@ -21,7 +28,6 @@ Comment = Web Browser for Developers" > firefox-dev-desktop
 
 sudo cp firefox-dev-desktop $HOME/Desktop
 sudo mv $HOME/Desktop/firefox-dev-desktop $HOME/Desktop/firefox-dev.desktop
-
 
 sudo mv firefox-dev-desktop $HOME/.local/share/applications
 sudo mv $HOME/.local/share/applications/firefox-dev-desktop $HOME/.local/share/applications/firefox-dev.desktop
