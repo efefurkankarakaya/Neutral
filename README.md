@@ -21,10 +21,11 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 * Linux Mint 19.1
 * Linux Mint 19
 * Kali Linux 2020.3 XFCE
+* Pop!_OS 20.04
 
 # Work In Progress
 
-* Pop!_OS
+* Pop!_OS 20.10
 
 # LICENSE
 
