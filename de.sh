@@ -1,7 +1,7 @@
 DE=$XDG_CURRENT_DESKTOP
 echo $DE
 
-if [[ $DE=="GNOME" ]]; then
+if [[ $DE=="GNOME" || $DE="pop:GNOME" ]]; then
     echo "[Desktop Entry]
     Name = Firefox Developer Edition
     GenericName = Firefox Developer Edition
