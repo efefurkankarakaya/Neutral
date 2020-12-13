@@ -22,10 +22,13 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 * Linux Mint 19
 * Kali Linux 2020.3 XFCE
 * Pop!_OS 20.04
+* Pop!_OS 20.10
+* Manjaro Linux 20.2 Nibia (GNOME, KDE, XFCE)
 
 # Work In Progress
 
-* Pop!_OS 20.10
+* Debian
+* Ubuntu
 
 # LICENSE
 
