@@ -24,6 +24,7 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 * Pop!_OS 20.04
 * Pop!_OS 20.10
 * Manjaro Linux 20.2 Nibia (GNOME, KDE, XFCE)
+* Arch Linux
 
 # Work In Progress
 
