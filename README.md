@@ -15,15 +15,11 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 
 # Compatible
 
-* Linux Mint 20
-* Linux Mint 19.3
-* Linux Mint 19.2
-* Linux Mint 19.1
-* Linux Mint 19
-* Kali Linux 2020.3 XFCE
-* Pop!_OS 20.04
-* Pop!_OS 20.10
-* Manjaro Linux 20.2 Nibia (GNOME, KDE, XFCE)
+* Linux Mint
+* LMDE
+* Kali Linux
+* Pop!_OS
+* Manjaro Linux (GNOME, KDE, XFCE)
 * Arch Linux
 
 # Work In Progress
