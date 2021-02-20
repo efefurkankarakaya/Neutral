@@ -21,11 +21,12 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 * Pop!_OS
 * Manjaro Linux (GNOME, KDE, XFCE)
 * Arch Linux
+* Debian
+* Ubuntu
 
 # Work In Progress
 
-* Debian
-* Ubuntu
+* Elementary OS
 
 # LICENSE
 
