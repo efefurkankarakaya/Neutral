@@ -2,15 +2,16 @@ DE=$XDG_CURRENT_DESKTOP
 BROWSER=$1
 BROWSER_NAME=$2
 
+echo $BROWSER_NAME
 declare -A WMClasses=(
     ["firefox"]="Firefox"
     ["firefox-esr"]="Firefox"
     ["firefox-beta"]="Firefox"
-    ["firefox-dev"]=$BROWSER_NAME
+    ["firefox-devedition"]=$BROWSER_NAME
     ["firefox-nightly"]="Nightly"
 )
 
-WMCLASS=$WMClasses[$BROWSER]
+WMCLASS=${WMClasses[$BROWSER]}
 
 if [[ $DE=="GNOME" || $DE="pop:GNOME" ]]; then
     echo "[Desktop Entry]
