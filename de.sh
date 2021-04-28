@@ -2,12 +2,11 @@ DE=$XDG_CURRENT_DESKTOP
 BROWSER=$1
 BROWSER_NAME=$2
 
-echo $BROWSER_NAME
 declare -A WMClasses=(
     ["firefox"]="Firefox"
     ["firefox-esr"]="Firefox"
     ["firefox-beta"]="Firefox"
-    ["firefox-devedition"]=$BROWSER_NAME
+    ["firefox-devedition"]="Firefox Developer Edition"
     ["firefox-nightly"]="Nightly"
 )
 
