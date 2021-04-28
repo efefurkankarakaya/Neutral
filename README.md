@@ -1,17 +1,40 @@
-# Mozilla Firefox Developer Edition | Unofficial Installer
+# Neutral: Firefox Linux Installer
 
-These scripts are written for make easier installation and uninstallation for Firefox Developer Edition. I want to make more compatible with other distributions too, so feel free to contribution and pull requesting.
+Neutral aims to make ease out installation of Firefox which is any type with latest.
+
+# Browsers
+
+Any of below can be installed easily.
+
+* Firefox
+* Firefox ESR (Extended Support Release)
+* Firefox Beta
+* Firefox Developer Edition
+* Firefox Nightly
 
 # How To Install?
-* Firstly, you have to mark it as executable. Run a terminal and write ```chmod +x install.sh```  
+* Firstly, you have to mark it as executable with ```chmod +x install.sh```  
 * Then, start the installer with ```./install.sh```
+* That's all, the browser can be found by _Start Menu._
 
 # How To Uninstall?
-* Actually it's almost same, do step 1 again as ```chmod +x uninstall.sh```
-* Then, start the uninstaller with ```./uninstall.sh```
 
-# How Can You Help / Contribute?
-You can try on your OS and feedback, so I can fix if there's a problem; or you can fix problems too and send pull request.
+## Step 1: Find the Argument
+Decide the installed browser and take its argument key.
+
+* Firefox's argument key is _firefox_
+* Firefox ESR's argument key is _firefox-esr_
+* Firefox Beta's argument key is _firefox-beta_
+* Firefox Developer Edition's argument key is _firefox-devedition_
+* Firefox Nightly's argument key is _firefox-nightly_ 
+
+## Step 2: Uninstall
+Example argument: _firefox-devedition_
+* Run ```./uninstall.sh firefox-devedition```
+* Uninstalled.
+
+## Warning
+Do no try to use this uninstaller to uninstall Firefox browsers which are installed via package managers or other options. This uninstaller is completely specific for installations which are done via _Neutral_ 
 
 # Compatible
 
@@ -23,10 +46,6 @@ You can try on your OS and feedback, so I can fix if there's a problem; or you c
 * Arch Linux
 * Debian
 * Ubuntu
-
-# Work In Progress
-
-* Elementary OS
 
 # LICENSE
 
