@@ -2,8 +2,6 @@
 
 Neutral aims to make ease out installation of Firefox which is any type with latest.
 
-<img src="images/firefox.png"/>
-
 # Browsers
 
 Any of below can be installed easily.
