@@ -94,8 +94,9 @@ install(){
 
     if [[ "$BROWSER" != "firefox" ]]; then
         mv firefox $BROWSER
-        sudo mv $BROWSER /opt
     fi
+
+    sudo mv $BROWSER /opt
 
     chmod +x de.sh
     ./de.sh $BROWSER "${BROWSER_NAME}"
