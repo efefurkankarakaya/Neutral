@@ -1,7 +1,7 @@
 echo "Junk scanner is starting.."
 
 PURE=firefox
-DEV=firefox-dev
+BROWSER=$1
 
 count=0
 
@@ -13,12 +13,12 @@ if [ -d "$PURE" ]; then
     echo "$PURE removed."
 fi
 
-if [ -d "$DEV" ]; then
-    echo "$DEV found."
+if [ -d "$BROWSER" ]; then
+    echo "$BROWSER found."
     count=$((++count))
-    echo "$DEV removing.."
-    rm -r "$DEV"
-    echo "$DEV removed."
+    echo "$BROWSER removing.."
+    rm -r "$BROWSER"
+    echo "$BROWSER removed."
 fi
 
 if (( $count==0 )); then

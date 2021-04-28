@@ -1,25 +1,36 @@
 DE=$XDG_CURRENT_DESKTOP
-echo $DE
+BROWSER=$1
+BROWSER_NAME=$2
+
+declare -A WMClasses=(
+    ["firefox"]="Firefox"
+    ["firefox-esr"]="Firefox"
+    ["firefox-beta"]="Firefox"
+    ["firefox-dev"]=$BROWSER_NAME
+    ["firefox-nightly"]="Nightly"
+)
+
+WMCLASS=$WMClasses[$BROWSER]
 
 if [[ $DE=="GNOME" || $DE="pop:GNOME" ]]; then
     echo "[Desktop Entry]
-    Name = Firefox Developer Edition
-    GenericName = Firefox Developer Edition
+    Name = $BROWSER_NAME
+    GenericName = $BROWSER_NAME
     Terminal = false
-    Icon = /opt/firefox-dev/browser/chrome/icons/default/default128.png
+    Icon = /opt/$BROWSER/browser/chrome/icons/default/default128.png
     Type = Application
     Categories = Application; Network; Web-Development;
-    Comment = Web Browser for Developers
-    Exec = /opt/firefox-dev/firefox
-    StartupWMClass = Firefox Developer Edition" >> firefox-dev.desktop
+    Comment = Web Browser
+    Exec = /opt/$BROWSER/firefox
+    StartupWMClass = $WMCLASS" >> $BROWSER.desktop
 else
     echo "[Desktop Entry]
-    Name = Mozilla Firefox Developer Edition
-    GenericName = Mozilla Firefox Developer Edition
-    Exec = /opt/firefox-dev/firefox
+    Name = Mozilla $BROWSER_NAME
+    GenericName = Mozilla $BROWSER_NAME
     Terminal = false
-    Icon = /opt/firefox-dev/browser/chrome/icons/default/default128.png
+    Icon = /opt/$BROWSER/browser/chrome/icons/default/default128.png
     Type = Application
     Categories = Application; Network; Web-Development;
-    Comment = Web Browser for Developers" >> firefox-dev.desktop
+    Comment = Web Browser
+    Exec = /opt/$BROWSER/firefox" >> $BROWSER.desktop
 fi

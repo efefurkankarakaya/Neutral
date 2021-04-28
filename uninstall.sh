@@ -1,9 +1,10 @@
 echo "Uninstaller is starting.."
 
-FILE=firefox-dev.tar.bz2
-EXEC_PATH=/opt/firefox-dev/
-DESKTOP=$HOME/Desktop/firefox-dev.desktop
-ICON=$HOME/.local/share/applications/firefox-dev.desktop
+BROWSER=$1
+FILE=$BROWSER.tar.bz2
+EXEC_PATH=/opt/$BROWSER/
+DESKTOP=$HOME/Desktop/$BROWSER.desktop
+ICON=$HOME/.local/share/applications/$BROWSER.desktop
 
 count=0
 
