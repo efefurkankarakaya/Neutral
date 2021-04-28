@@ -36,7 +36,7 @@ Example argument: _firefox-devedition_
 ## Warning
 Do no try to use this uninstaller to uninstall Firefox browsers which are installed via package managers or other options. This uninstaller is completely specific for installations which are done via _Neutral_ 
 
-# Compatible
+# Tested
 
 * Linux Mint
 * LMDE
