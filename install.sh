@@ -1,8 +1,6 @@
 #!/bin/bash
 
 BOLD=`tput bold`
-RED=`tput setaf 1`
-GREEN=`tput setaf 2`
 YELLOW=`tput setaf 11`
 RESET=`tput sgr0`
 
@@ -27,9 +25,7 @@ while [[ $option -eq "" ]] || [ $option -lt 1 ] || [ $option -gt 5 ]; do
     read option
 done
 
-echo $option
 ((--option))
-echo $option
 
 browsers=( 
         "firefox" 
@@ -57,7 +53,6 @@ declare -A names=(
 # https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64&lang=en-US
 # https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US
 # https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US
-
 
 echo "Installation is starting.."
 
