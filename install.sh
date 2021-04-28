@@ -23,7 +23,7 @@ while [[ $option -eq "" ]] || [ $option -lt 1 ] || [ $option -gt 5 ]; do
         echo "Quit"
         exit 0
     fi
-    printf "Pick one: "
+    printf "${BOLD}${YELLOW}user@input: $RESET"
     read option
 done
 
