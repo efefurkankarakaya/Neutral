@@ -6,7 +6,7 @@ declare -A WMClasses=(
     ["firefox"]="Firefox"
     ["firefox-esr"]="Firefox"
     ["firefox-beta"]="Firefox"
-    ["firefox-devedition"]="Firefox Developer Edition"
+    ["firefox-devedition"]="firefox-aurora"
     ["firefox-nightly"]="Nightly"
 )
 
